@@ -26,7 +26,7 @@ html {
   font-family: "Segoe UI", "Courier New", Courier, monospace;
   font-size: 16px;
   background-color: var(--dark-blue);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 /* Header */
@@ -107,9 +107,9 @@ header {
 /* Main */
 main {
   height: 100vh;
-  overflow-x: hidden;
+  /* overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; */
 }
 
 /* Sections */
@@ -117,7 +117,7 @@ section {
   width: 100%;
   height: 100vh;
   padding: 0 30px;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
 }
 
 /* Presentation */
@@ -152,6 +152,39 @@ section {
   color: rgb(204, 204, 204);
 }
 
+.presentation--scroll {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-top: 80px;
+}
+
+.presentation--scroll > p {
+  color: white;
+  font-weight: bold;
+}
+
+.presentation--scroll > i:nth-child(1) {
+  color: white;
+}
+
+.presentation--scroll > i:nth-child(3) {
+  color: var(--pink);
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
 .btn--cta {
   width: fit-content;
   background-color: var(--pink);
@@ -159,6 +192,7 @@ section {
   padding: 15px 35px;
   font-weight: bold;
   font-size: 1rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -166,12 +200,6 @@ section {
 
 .btn--cta:hover {
   transform: scale(1.07);
-}
-
-.presentation--scroll {
-  margin-top: 80px;
-  color: white;
-  font-weight: bold;
 }
 
 /* About */
@@ -214,17 +242,54 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 15px;
+  row-gap: 25px;
 }
 
-.social--item {
+.social > a {
+  position: relative;
+}
+
+.social i {
   color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pulse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  
+  z-index: -10;
+}
+
+.social > a:hover .pulse {
+  transform-origin: bottom right;
+  background-color: var(--pink);
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) 1 forwards;
+}
+
+.social > a:hover i{
+  transform: scale(1.3);
 }
 
 .contact--line {
   width: 1px;
   height: 100px;
   background-color: white;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 /* Mail Bottom Right */

@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d19de467c5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./src/style/style.css" />
     <title>Portfolio - Tamaya Lucas</title>
   </head>
@@ -19,10 +23,18 @@
 
       <nav>
         <ul class="nav">
-          <li class="nav--item"><span class="nav--item-nb">1</span> About</li>
-          <li class="nav--item"><span class="nav--item-nb">2</span> Projets</li>
-          <li class="nav--item"><span class="nav--item-nb">3</span> Contact</li>
-          <li class="nav--item"><span class="nav--item-nb">4</span> Mon CV</li>
+          <li>
+            <a class="nav--item"><span class="nav--item-nb">1</span> About</a>
+          </li>
+          <li>
+            <a class="nav--item"><span class="nav--item-nb">2</span> Projets</a>
+          </li>
+          <li>
+            <a class="nav--item"><span class="nav--item-nb">3</span> Contact</a>
+          </li>
+          <li>
+            <a class="nav--item"><span class="nav--item-nb">4</span> Mon CV</a>
+          </li>
         </ul>
       </nav>
 
@@ -48,8 +60,11 @@
           <button class="btn--cta">
             <p>Contact</p>
           </button>
-
-          <p class="presentation--scroll">Scroll Down</p>
+          <div class="presentation--scroll">
+            <i class="fas fa-mouse"></i>
+            <p>Scroll Down</p>
+            <i class="fas fa-angle-down"></i>
+          </div>
         </div>
       </section>
 
@@ -87,10 +102,34 @@
         </div>
       </section>
 
+      <section>
+        <div class="mainContainer">
+          <h2 class="section--title"><span>02.</span> Projets</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="mainContainer">
+          <h2 class="section--title"><span>03.</span> Contact</h2>
+        </div>
+      </section>
+
       <div class="social">
-        <p class="social--item">Linkedin</p>
-        <p class="social--item">GitHub</p>
-        <p class="social--item">5 euro</p>
+        <a
+          href="https://www.linkedin.com/in/lucas-tamaya-41a09621b/"
+          target="_blank"
+        >
+          <div class="pulse"></div>
+          <i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/LucasTamaya" target="_blank">
+          <div class="pulse"></div>
+          <i class="fab fa-github"></i
+        ></a>
+        <a href="https://5euros.com/profil/lucas-tamaya" target="_blank">
+          <div class="pulse"></div>
+          <i class="fas fa-briefcase"></i
+        ></a>
         <div class="contact--line"></div>
       </div>
 
@@ -99,5 +138,6 @@
         <div class="contact--line"></div>
       </div>
     </main>
+    <script src="src/js/smoothScroll.js"></script>
   </body>
 </html>
