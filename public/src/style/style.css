@@ -20,6 +20,7 @@
   --dark-blue: #081229;
   --light-blue: #181d3b;
   --pink: #ec5891;
+  --gray: rgb(182, 182, 182);
 }
 
 html {
@@ -123,7 +124,7 @@ section {
 /* Presentation */
 .mainContainer {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px; /*800px*/
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -149,7 +150,7 @@ section {
 
 .presentation--info {
   font-size: 2rem;
-  color: rgb(204, 204, 204);
+  color: var(--gray);
 }
 
 .presentation--scroll {
@@ -264,7 +265,7 @@ section {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  
+
   z-index: -10;
 }
 
@@ -274,7 +275,7 @@ section {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) 1 forwards;
 }
 
-.social > a:hover i{
+.social > a:hover i {
   transform: scale(1.3);
 }
 
@@ -290,6 +291,66 @@ section {
     transform: scale(2);
     opacity: 0;
   }
+}
+
+/* Projets */
+.swiper {
+  width: 100%;
+}
+
+.project {
+  background-color: var(--light-blue);
+  padding: 20px;
+}
+
+.project--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project--header > a {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.project--img {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.project--title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project--info {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project--techno {
+  color: var(--gray);
+}
+
+.swiperButton--container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiperButton--container > i {
+  font-size: 1.3rem;
+  color: var(--pink);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.swiperButton--container > i:hover {
+  transform: scale(1.2);
 }
 
 /* Mail Bottom Right */

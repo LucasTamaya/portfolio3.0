@@ -14,6 +14,11 @@
       src="https://kit.fontawesome.com/d19de467c5.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Swipper link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./src/style/style.css" />
     <title>Portfolio - Tamaya Lucas</title>
   </head>
@@ -105,6 +110,172 @@
       <section>
         <div class="mainContainer">
           <h2 class="section--title"><span>02.</span> Projets</h2>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project">
+                <div class="project--header">
+                  <a
+                    href="https://github.com/LucasTamaya/github-landing-page-clone"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://github-landing-page-clone-lucastamaya.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/img/projets/github.png"
+                    alt="Projet GitHub"
+                    class="project--img"
+                  />
+                </a>
+                <h2 class="project--title">GitHub</h2>
+                <p class="project--info">
+                  Reproduction de la partie frontend de l'application GitHub
+                </p>
+                <p class="project--techno">HTML CSS React JS</p>
+              </div>
+
+              <div class="swiper-slide project">
+                <div class="project--header">
+                  <a
+                    href="https://github.com/LucasTamaya/pinterest-clone"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://pinterest-clone-lucastamaya.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/img/projets/pinterest.png"
+                    alt="Projet GitHub"
+                    class="project--img"
+                  />
+                </a>
+                <h2 class="project--title">Pinterest</h2>
+                <p class="project--info">
+                  Reproduction de l'application Pinterest avec la possibilité
+                  d'ajouter des photos, de les enregistrer ...
+                </p>
+                <p class="project--techno">HTML CSS React JS MongoDB</p>
+              </div>
+
+              <div class="swiper-slide project">
+                <div class="project--header">
+                  <a
+                    href="https://github.com/LucasTamaya/ticket-master-clone"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://ticket-master-clone-lucastamaya.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/img/projets/ticket-master.png"
+                    alt="Projet Ticket Master"
+                    class="project--img"
+                  />
+                </a>
+                <h2 class="project--title">Ticket Master</h2>
+                <p class="project--info">
+                  Reproduction de la partie frontend de l'application GitHub
+                </p>
+                <p class="project--techno">HTML CSS React JS</p>
+              </div>
+
+              <div class="swiper-slide project">
+                <div class="project--header">
+                  <a
+                    href="https://github.com/LucasTamaya/DiscordClone"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://discord-clone-lucastamaya.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/img/projets/discord.png"
+                    alt="Projet Discord"
+                    class="project--img"
+                  />
+                </a>
+                <h2 class="project--title">Discord</h2>
+                <p class="project--info">
+                  Reproduction de la partie frontend de l'application Discord
+                </p>
+                <p class="project--techno">HTML CSS React JS</p>
+              </div>
+
+              <div class="swiper-slide project">
+                <div class="project--header">
+                  <a
+                    href="https://github.com/LucasTamaya/tesla-clone"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://tesla-clone-lucastamaya.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/img/projets/tesla.png"
+                    alt="Projet Tesla"
+                    class="project--img"
+                  />
+                </a>
+                <h2 class="project--title">Tesla</h2>
+                <p class="project--info">
+                  Reproduction de la partie frontend du site web Tesla
+                </p>
+                <p class="project--techno">HTML SCSS React JS</p>
+              </div>
+
+              <div class="swiper-slide project">
+                <div class="project--header">
+                  <a
+                    href="https://github.com/LucasTamaya/trello-clone"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://trello-clone-lucastamaya.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/img/projets/trello.png"
+                    alt="Projet Trello"
+                    class="project--img"
+                  />
+                </a>
+                <h2 class="project--title">Trello</h2>
+                <p class="project--info">
+                  Reproduction de l'application Trello
+                </p>
+                <p class="project--techno">HTML Tailwind CSS Next JS MongoDB</p>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+          <div class="swiperButton--container">
+            <i class="fas fa-arrow-left" id="swiper-button-prev"></i>
+            <i class="fas fa-arrow-right" id="swiper-button-next"></i>
+          </div>
         </div>
       </section>
 
@@ -139,5 +310,27 @@
       </div>
     </main>
     <script src="src/js/smoothScroll.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#swiper-button-next",
+          prevEl: "#swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
