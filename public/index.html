@@ -51,6 +51,7 @@
     </header>
 
     <main>
+      <!-- Section Presentation -->
       <section>
         <div class="mainContainer">
           <p class="presentation--hello">Bonjour, moi c'est</p>
@@ -73,6 +74,7 @@
         </div>
       </section>
 
+      <!-- Section About -->
       <section>
         <div class="mainContainer">
           <div class="about">
@@ -107,6 +109,7 @@
         </div>
       </section>
 
+      <!-- Section Projets -->
       <section>
         <div class="mainContainer">
           <h2 class="section--title"><span>02.</span> Projets</h2>
@@ -279,12 +282,57 @@
         </div>
       </section>
 
+      <!-- Section Contact -->
       <section>
         <div class="mainContainer">
           <h2 class="section--title"><span>03.</span> Contact</h2>
+
+          <form
+            action="https://formsubmit.co/lucastamaya.974@gmail.com"
+            method="POST"
+            id="form"
+          >
+            <div class="form--head">
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                required
+                class="form--input"
+                id="email"
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Votre prénom"
+                required
+                class="form--input"
+                id="username"
+              />
+            </div>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Votre message"
+              required
+              class="form--input"
+              id="message"
+            ></textarea>
+            <!-- Redirection vers une thank you page lorsqu'on le message a été envoyé -->
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/public/thanks.html"
+            />
+            <button type="submit" class="form--btn disable" id="btn">
+              Envoyer
+            </button>
+          </form>
         </div>
       </section>
 
+      <!-- Links bottom left -->
       <div class="social">
         <a
           href="https://www.linkedin.com/in/lucas-tamaya-41a09621b/"
@@ -304,33 +352,20 @@
         <div class="contact--line"></div>
       </div>
 
+      <!-- Email bottom right -->
       <div class="email">
         <p class="email--item">lucastamaya.974@gmail.com</p>
         <div class="contact--line"></div>
       </div>
     </main>
+    <!-- Scroll animation -->
     <script src="src/js/smoothScroll.js"></script>
+
+    <!-- Control form -->
+    <script src="src/js/controlForm.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: "#swiper-button-next",
-          prevEl: "#swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="./src/js/swiper.js"></script>
   </body>
 </html>
