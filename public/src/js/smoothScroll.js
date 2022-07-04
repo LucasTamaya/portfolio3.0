@@ -13,7 +13,7 @@ navLinks.forEach((link) => link.addEventListener("click", addScrollSmooth));
 function addScrollSmooth(e) {
   const linkIndex = navLinks.indexOf(e.target);
   window.scrollTo({
-    top: sectionsPosition[linkIndex + 1],
+    top: sectionsPosition[linkIndex],
     behavior: "smooth",
   });
 }

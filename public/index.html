@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/public/src/img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,21 +25,21 @@
   </head>
   <body>
     <header>
-      <div class="logo">LT</div>
+      <img src="src/img/logo.png" alt="Mon logo" class="logo" />
 
       <nav>
         <ul class="nav">
           <li>
-            <a class="nav--item"><span class="nav--item-nb">1</span> About</a>
+            <a class="nav--item"><span class="nav--item-nb">1</span> Home</a>
           </li>
           <li>
-            <a class="nav--item"><span class="nav--item-nb">2</span> Projets</a>
+            <a class="nav--item"><span class="nav--item-nb">2</span> About</a>
           </li>
           <li>
-            <a class="nav--item"><span class="nav--item-nb">3</span> Contact</a>
+            <a class="nav--item"><span class="nav--item-nb">3</span> Projets</a>
           </li>
           <li>
-            <a class="nav--item"><span class="nav--item-nb">4</span> Mon CV</a>
+            <a class="nav--item"><span class="nav--item-nb">4</span> Contact</a>
           </li>
         </ul>
       </nav>
@@ -84,21 +85,26 @@
               <p class="about--info-para">
                 Je pratique l'informatique depuis le lycée, mais je me suis
                 découvert une réelle passion pour le développement web depuis
-                2020. Je souhaiterais donc en faire mon métier plus tard
+                2020. Je souhaiterais donc en faire mon métier plus tard.
               </p>
               <p class="about--info-para">
                 Autonome, je me forme en autodidacte au quotidien grâce à de
                 nombreuses formations en ligne depuis bientôt deux ans. J'ai
                 notamment obtenu les certifications Responsive Web Design et
                 JavaScript Algorithms and Data Structures de la plateforme
-                FreeCodeCamp
+                FreeCodeCamp.
               </p>
 
               <p class="about--info-para">
                 Actuellement, je suis en formation à l'IFR pour obtenir le titre
-                de Développeur Web et Applications Mobiles
+                de Développeur Web et Applications Mobiles.
               </p>
-              <button class="btn--cta">Télécharger mon CV</button>
+              <a
+                href="src/utils/dev-web-ifr.pdf"
+                download="CV_Tamaya_Lucas"
+                class="btn--cta"
+                >Télécharger mon CV</a
+              >
             </div>
             <img
               src="./src/img/moi.jpg"
@@ -331,6 +337,33 @@
           </form>
         </div>
       </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer--container">
+          <img src="src/img/logo.png" alt="Mon logo" class="logo" />
+          <a href="mentions-légales.html" class="footer--legal"
+            >Mentions Légales</a
+          >
+          <div class="footer--links">
+            <a
+              href="https://www.linkedin.com/in/lucas-tamaya-41a09621b/"
+              target="_blank"
+            >
+              <div class="pulse"></div>
+              <i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/LucasTamaya" target="_blank">
+              <div class="pulse"></div>
+              <i class="fab fa-github"></i
+            ></a>
+            <a href="https://5euros.com/profil/lucas-tamaya" target="_blank">
+              <div class="pulse"></div>
+              <i class="fas fa-briefcase"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
 
       <!-- Links bottom left -->
       <div class="social">
