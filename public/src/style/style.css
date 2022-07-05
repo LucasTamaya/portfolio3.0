@@ -43,9 +43,6 @@ header {
 }
 
 .logo {
-  /* color: white;
-  font-weight: bold;
-  font-size: 2rem; */
   width: 80px;
 }
 
@@ -125,7 +122,7 @@ section {
 /* Presentation */
 .mainContainer {
   margin: 0 auto;
-  max-width: 1000px; /*800px*/
+  max-width: 1000px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -143,10 +140,8 @@ section {
 
 .presentation--name {
   font-size: 4rem;
-  /* font-family: "Abril Fatface", cursive; */
   font-weight: bold;
   color: white;
-  /* letter-spacing: 5px; */
 }
 
 .presentation--info {
@@ -238,6 +233,7 @@ section {
 /* Projets */
 .swiper {
   width: 100%;
+  cursor: grab;
 }
 
 .project {
@@ -394,8 +390,17 @@ footer {
 
 /* Mentions Légales */
 .legalContainer {
-  padding: 40px;
+  padding: 40px 20px;
   height: fit-content;
+}
+
+.legal--btn {
+  position: fixed;
+  bottom: 40px;
+}
+
+.legal--btn > i {
+  margin-right: 5px;
 }
 
 .legalContent {

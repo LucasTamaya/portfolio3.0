@@ -88,30 +88,3 @@ const isValidEmail = (email) => {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 };
-
-// const isValidInput = (input, inputState) => {
-//   if (input.value === "") {
-//     inputState = false;
-//     console.log(inputState);
-//   }
-
-//   if (input.value != "") {
-//     inputState = true;
-//   }
-
-// };
-
-// const isValidInputState = () => {
-//   // Si un des inputs n'est pas valide, on masque le bouton submit
-//   if (!emailState || !usernameState || !messageState) {
-//     console.log("un des inputs n'est pas valide");
-//     btn.classList.remove("enable");
-//     btn.classList.add("disable");
-//   }
-
-//   if (emailState && usernameState && messageState) {
-//     console.log("tous les inputs sont valides");
-//     btn.classList.remove("disable");
-//     btn.classList.add("enable");
-//   }
-// };

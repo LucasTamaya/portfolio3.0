@@ -36,7 +36,9 @@
             <a class="nav--item"><span class="nav--item-nb">2</span> About</a>
           </li>
           <li>
-            <a class="nav--item"><span class="nav--item-nb">3</span> Projets</a>
+            <a class="nav--item"
+              ><span class="nav--item-nb">3</span> Projects</a
+            >
           </li>
           <li>
             <a class="nav--item"><span class="nav--item-nb">4</span> Contact</a>
@@ -55,6 +57,7 @@
       <!-- Section Presentation -->
       <section>
         <div class="mainContainer">
+          <h2 class="section--title"><span>01.</span> Home</h2>
           <p class="presentation--hello">Bonjour, moi c'est</p>
 
           <p class="presentation--name">TAMAYA Lucas</p>
@@ -64,14 +67,7 @@
             général.
           </p>
 
-          <button class="btn--cta">
-            <p>Contact</p>
-          </button>
-          <div class="presentation--scroll">
-            <i class="fas fa-mouse"></i>
-            <p>Scroll Down</p>
-            <i class="fas fa-angle-down"></i>
-          </div>
+          <button class="btn--cta" id="btn--contact">Contact</button>
         </div>
       </section>
 
@@ -80,7 +76,7 @@
         <div class="mainContainer">
           <div class="about">
             <div class="about--info">
-              <h2 class="section--title"><span>01.</span> About Me</h2>
+              <h2 class="section--title"><span>02.</span> About</h2>
 
               <p class="about--info-para">
                 Je pratique l'informatique depuis le lycée, mais je me suis
@@ -118,7 +114,7 @@
       <!-- Section Projets -->
       <section>
         <div class="mainContainer">
-          <h2 class="section--title"><span>02.</span> Projets</h2>
+          <h2 class="section--title"><span>03.</span> Projets</h2>
 
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -291,7 +287,7 @@
       <!-- Section Contact -->
       <section>
         <div class="mainContainer">
-          <h2 class="section--title"><span>03.</span> Contact</h2>
+          <h2 class="section--title"><span>04.</span> Contact</h2>
 
           <form
             action="https://formsubmit.co/lucastamaya.974@gmail.com"
@@ -325,11 +321,11 @@
               class="form--input"
               id="message"
             ></textarea>
-            <!-- Redirection vers une thank you page lorsqu'on le message a été envoyé -->
+            <!-- Redirection vers une thank you page lorsque le message a été envoyé -->
             <input
               type="hidden"
               name="_next"
-              value="http://127.0.0.1:5500/public/thanks.html"
+              value="https://portfolio3-0-lucastamaya.vercel.app/thanks.html"
             />
             <button type="submit" class="form--btn disable" id="btn">
               Envoyer
