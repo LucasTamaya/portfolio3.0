@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/public/src/img/favicon.ico" />
+    <!-- Font Google link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome Icon link -->
     <script
       src="https://kit.fontawesome.com/d19de467c5.js"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS JS link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swipper link -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- AOS CSS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS link -->
     <link rel="stylesheet" href="./src/style/style.css" />
     <title>Portfolio - Tamaya Lucas</title>
   </head>
+
   <body>
     <header>
       <img src="src/img/logo.png" alt="Mon logo" class="logo" />
@@ -46,11 +54,7 @@
         </ul>
       </nav>
 
-      <div class="menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <i class="fas fa-bars" id="hamburgerMenu"></i>
     </header>
 
     <main>
@@ -75,9 +79,8 @@
       <section>
         <div class="mainContainer">
           <div class="about">
-            <div class="about--info">
+            <div class="about--info" data-aos="fade-right">
               <h2 class="section--title"><span>02.</span> About</h2>
-
               <p class="about--info-para">
                 Je pratique l'informatique depuis le lycée, mais je me suis
                 découvert une réelle passion pour le développement web depuis
@@ -106,6 +109,7 @@
               src="./src/img/moi.jpg"
               alt="Photo de moi"
               class="about--img"
+              data-aos="fade-left"
             />
           </div>
         </div>
@@ -114,172 +118,174 @@
       <!-- Section Projets -->
       <section>
         <div class="mainContainer">
-          <h2 class="section--title"><span>03.</span> Projets</h2>
-
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide project">
-                <div class="project--header">
+          <div class="projects" data-aos="fade-right">
+            <h2 class="section--title"><span>03.</span> Projets</h2>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/github-landing-page-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <a
-                    href="https://github.com/LucasTamaya/github-landing-page-clone"
+                    href="https://github-landing-page-clone-lucastamaya.vercel.app/"
                     target="_blank"
                   >
-                    <i class="fab fa-github"></i>
+                    <img
+                      src="./src/img/projets/github.png"
+                      alt="Projet GitHub"
+                      class="project--img"
+                    />
                   </a>
+                  <h2 class="project--title">GitHub</h2>
+                  <p class="project--info">
+                    Reproduction de la partie frontend de l'application GitHub
+                  </p>
+                  <p class="project--techno">HTML CSS React JS</p>
                 </div>
-                <a
-                  href="https://github-landing-page-clone-lucastamaya.vercel.app/"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/img/projets/github.png"
-                    alt="Projet GitHub"
-                    class="project--img"
-                  />
-                </a>
-                <h2 class="project--title">GitHub</h2>
-                <p class="project--info">
-                  Reproduction de la partie frontend de l'application GitHub
-                </p>
-                <p class="project--techno">HTML CSS React JS</p>
-              </div>
 
-              <div class="swiper-slide project">
-                <div class="project--header">
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/pinterest-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <a
-                    href="https://github.com/LucasTamaya/pinterest-clone"
+                    href="https://pinterest-clone-lucastamaya.vercel.app/"
                     target="_blank"
                   >
-                    <i class="fab fa-github"></i>
+                    <img
+                      src="./src/img/projets/pinterest.png"
+                      alt="Projet GitHub"
+                      class="project--img"
+                    />
                   </a>
+                  <h2 class="project--title">Pinterest</h2>
+                  <p class="project--info">
+                    Reproduction de l'application Pinterest avec la possibilité
+                    d'ajouter des photos, de les enregistrer ...
+                  </p>
+                  <p class="project--techno">HTML CSS React JS MongoDB</p>
                 </div>
-                <a
-                  href="https://pinterest-clone-lucastamaya.vercel.app/"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/img/projets/pinterest.png"
-                    alt="Projet GitHub"
-                    class="project--img"
-                  />
-                </a>
-                <h2 class="project--title">Pinterest</h2>
-                <p class="project--info">
-                  Reproduction de l'application Pinterest avec la possibilité
-                  d'ajouter des photos, de les enregistrer ...
-                </p>
-                <p class="project--techno">HTML CSS React JS MongoDB</p>
-              </div>
 
-              <div class="swiper-slide project">
-                <div class="project--header">
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/ticket-master-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <a
-                    href="https://github.com/LucasTamaya/ticket-master-clone"
+                    href="https://ticket-master-clone-lucastamaya.vercel.app/"
                     target="_blank"
                   >
-                    <i class="fab fa-github"></i>
+                    <img
+                      src="./src/img/projets/ticket-master.png"
+                      alt="Projet Ticket Master"
+                      class="project--img"
+                    />
                   </a>
+                  <h2 class="project--title">Ticket Master</h2>
+                  <p class="project--info">
+                    Reproduction de la partie frontend de l'application GitHub
+                  </p>
+                  <p class="project--techno">HTML CSS React JS</p>
                 </div>
-                <a
-                  href="https://ticket-master-clone-lucastamaya.vercel.app/"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/img/projets/ticket-master.png"
-                    alt="Projet Ticket Master"
-                    class="project--img"
-                  />
-                </a>
-                <h2 class="project--title">Ticket Master</h2>
-                <p class="project--info">
-                  Reproduction de la partie frontend de l'application GitHub
-                </p>
-                <p class="project--techno">HTML CSS React JS</p>
-              </div>
 
-              <div class="swiper-slide project">
-                <div class="project--header">
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/DiscordClone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <a
-                    href="https://github.com/LucasTamaya/DiscordClone"
+                    href="https://discord-clone-lucastamaya.vercel.app/"
                     target="_blank"
                   >
-                    <i class="fab fa-github"></i>
+                    <img
+                      src="./src/img/projets/discord.png"
+                      alt="Projet Discord"
+                      class="project--img"
+                    />
                   </a>
+                  <h2 class="project--title">Discord</h2>
+                  <p class="project--info">
+                    Reproduction de la partie frontend de l'application Discord
+                  </p>
+                  <p class="project--techno">HTML CSS React JS</p>
                 </div>
-                <a
-                  href="https://discord-clone-lucastamaya.vercel.app/"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/img/projets/discord.png"
-                    alt="Projet Discord"
-                    class="project--img"
-                  />
-                </a>
-                <h2 class="project--title">Discord</h2>
-                <p class="project--info">
-                  Reproduction de la partie frontend de l'application Discord
-                </p>
-                <p class="project--techno">HTML CSS React JS</p>
-              </div>
 
-              <div class="swiper-slide project">
-                <div class="project--header">
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/tesla-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <a
-                    href="https://github.com/LucasTamaya/tesla-clone"
+                    href="https://tesla-clone-lucastamaya.vercel.app/"
                     target="_blank"
                   >
-                    <i class="fab fa-github"></i>
+                    <img
+                      src="./src/img/projets/tesla.png"
+                      alt="Projet Tesla"
+                      class="project--img"
+                    />
                   </a>
+                  <h2 class="project--title">Tesla</h2>
+                  <p class="project--info">
+                    Reproduction de la partie frontend du site web Tesla
+                  </p>
+                  <p class="project--techno">HTML SCSS React JS</p>
                 </div>
-                <a
-                  href="https://tesla-clone-lucastamaya.vercel.app/"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/img/projets/tesla.png"
-                    alt="Projet Tesla"
-                    class="project--img"
-                  />
-                </a>
-                <h2 class="project--title">Tesla</h2>
-                <p class="project--info">
-                  Reproduction de la partie frontend du site web Tesla
-                </p>
-                <p class="project--techno">HTML SCSS React JS</p>
-              </div>
 
-              <div class="swiper-slide project">
-                <div class="project--header">
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/trello-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <a
-                    href="https://github.com/LucasTamaya/trello-clone"
+                    href="https://trello-clone-lucastamaya.vercel.app/"
                     target="_blank"
                   >
-                    <i class="fab fa-github"></i>
+                    <img
+                      src="./src/img/projets/trello.png"
+                      alt="Projet Trello"
+                      class="project--img"
+                    />
                   </a>
+                  <h2 class="project--title">Trello</h2>
+                  <p class="project--info">
+                    Reproduction de l'application Trello
+                  </p>
+                  <p class="project--techno">
+                    HTML Tailwind CSS Next JS MongoDB
+                  </p>
                 </div>
-                <a
-                  href="https://trello-clone-lucastamaya.vercel.app/"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/img/projets/trello.png"
-                    alt="Projet Trello"
-                    class="project--img"
-                  />
-                </a>
-                <h2 class="project--title">Trello</h2>
-                <p class="project--info">
-                  Reproduction de l'application Trello
-                </p>
-                <p class="project--techno">HTML Tailwind CSS Next JS MongoDB</p>
               </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-          </div>
-          <div class="swiperButton--container">
-            <i class="fas fa-arrow-left" id="swiper-button-prev"></i>
-            <i class="fas fa-arrow-right" id="swiper-button-next"></i>
+            <div class="swiperButton--container">
+              <i class="fas fa-arrow-left" id="swiper-button-prev"></i>
+              <i class="fas fa-arrow-right" id="swiper-button-next"></i>
+            </div>
           </div>
         </div>
       </section>
@@ -287,50 +293,52 @@
       <!-- Section Contact -->
       <section>
         <div class="mainContainer">
-          <h2 class="section--title"><span>04.</span> Contact</h2>
+          <div class="contact" data-aos="fade-left">
+            <h2 class="section--title"><span>04.</span> Contact</h2>
 
-          <form
-            action="https://formsubmit.co/lucastamaya.974@gmail.com"
-            method="POST"
-            id="form"
-          >
-            <div class="form--head">
-              <input
-                type="email"
-                name="email"
-                placeholder="Votre email"
+            <form
+              action="https://formsubmit.co/lucastamaya.974@gmail.com"
+              method="POST"
+              id="form"
+            >
+              <div class="form--head">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Votre email"
+                  required
+                  class="form--input"
+                  id="email"
+                />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Votre prénom"
+                  required
+                  class="form--input"
+                  id="username"
+                />
+              </div>
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Votre message"
                 required
-                class="form--input"
-                id="email"
-              />
+                class="form--input message"
+                id="message"
+              ></textarea>
+              <!-- Redirection vers une thank you page lorsque le message a été envoyé -->
               <input
-                type="text"
-                name="name"
-                placeholder="Votre prénom"
-                required
-                class="form--input"
-                id="username"
+                type="hidden"
+                name="_next"
+                value="https://portfolio3-0-lucastamaya.vercel.app/thanks.html"
               />
-            </div>
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Votre message"
-              required
-              class="form--input"
-              id="message"
-            ></textarea>
-            <!-- Redirection vers une thank you page lorsque le message a été envoyé -->
-            <input
-              type="hidden"
-              name="_next"
-              value="https://portfolio3-0-lucastamaya.vercel.app/thanks.html"
-            />
-            <button type="submit" class="form--btn disable" id="btn">
-              Envoyer
-            </button>
-          </form>
+              <button type="submit" class="form--btn disable" id="btn">
+                Envoyer
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -346,15 +354,12 @@
               href="https://www.linkedin.com/in/lucas-tamaya-41a09621b/"
               target="_blank"
             >
-              <div class="pulse"></div>
               <i class="fab fa-linkedin"></i
             ></a>
             <a href="https://github.com/LucasTamaya" target="_blank">
-              <div class="pulse"></div>
               <i class="fab fa-github"></i
             ></a>
             <a href="https://5euros.com/profil/lucas-tamaya" target="_blank">
-              <div class="pulse"></div>
               <i class="fas fa-briefcase"></i
             ></a>
           </div>
@@ -396,5 +401,10 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
+
+    <!-- AOS JS -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
