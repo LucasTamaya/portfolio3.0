@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- Fontawesome Icon link -->
@@ -17,15 +17,13 @@
       src="https://kit.fontawesome.com/d19de467c5.js"
       crossorigin="anonymous"
     ></script>
-    <!-- AOS JS link -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scroll Reveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Swipper link -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- AOS CSS link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS link -->
     <link rel="stylesheet" href="./src/style/style.css" />
     <title>Portfolio - Tamaya Lucas</title>
@@ -60,7 +58,7 @@
     <main>
       <!-- Section Presentation -->
       <section>
-        <div class="mainContainer">
+        <div class="mainContainer" id="presentationSection">
           <h2 class="section--title"><span>01.</span> Home</h2>
           <p class="presentation--hello">Bonjour, moi c'est</p>
 
@@ -77,9 +75,9 @@
 
       <!-- Section About -->
       <section>
-        <div class="mainContainer">
+        <div class="mainContainer" id="aboutSection">
           <div class="about">
-            <div class="about--info" data-aos="fade-right">
+            <div class="about--info">
               <h2 class="section--title"><span>02.</span> About</h2>
               <p class="about--info-para">
                 Je pratique l'informatique depuis le lycée, mais je me suis
@@ -109,7 +107,6 @@
               src="./src/img/moi.jpg"
               alt="Photo de moi"
               class="about--img"
-              data-aos="fade-left"
             />
           </div>
         </div>
@@ -117,8 +114,8 @@
 
       <!-- Section Projets -->
       <section>
-        <div class="mainContainer">
-          <div class="projects" data-aos="fade-right">
+        <div class="mainContainer" id="projectsSection">
+          <div class="projects">
             <h2 class="section--title"><span>03.</span> Projets</h2>
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
@@ -292,8 +289,8 @@
 
       <!-- Section Contact -->
       <section>
-        <div class="mainContainer">
-          <div class="contact" data-aos="fade-left">
+        <div class="mainContainer" id="contactSection">
+          <div class="contact">
             <h2 class="section--title"><span>04.</span> Contact</h2>
 
             <form
@@ -402,9 +399,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
 
-    <!-- AOS JS -->
-    <script>
-      AOS.init();
-    </script>
+    <!-- Scroll Reveal JS -->
+    <script src="./src/js/scrollReveal.js"></script>
   </body>
 </html>

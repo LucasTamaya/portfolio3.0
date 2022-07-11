@@ -1,9 +1,3 @@
-/* Import des fonts */
-@font-face {
-  font-family: "Segoe UI";
-  src: url("../font/segoe-ui-4-cufonfonts/Segoe\ UI.ttf") format("ttf");
-}
-
 /* Reset CSS */
 *,
 *::after,
@@ -24,7 +18,7 @@
 }
 
 html {
-  font-family: "Segoe UI", "Courier New", Courier, monospace;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: var(--dark-blue);
 }
@@ -139,34 +133,41 @@ section {
   row-gap: 20px;
 }
 
+#presentationSection,
+#aboutSection,
+#projectsSection,
+#contactSection {
+  visibility: hidden;
+}
+
 .presentation--hello {
   font-size: 2.8rem;
   font-weight: bold;
   color: #ec5891;
   font-family: "Abril Fatface", cursive;
   letter-spacing: 5px;
-  opacity: 0;
-  animation: firstLoadTransition 1.3s 1s forwards;
+  /* opacity: 0; */
+  /* animation: firstLoadTransition 1.5s 0.5s forwards; */
 }
 
 .presentation--name {
   font-size: 4rem;
   font-weight: bold;
   color: white;
-  opacity: 0;
-  animation: firstLoadTransition 1.3s 1.5s forwards;
+  /* opacity: 0; */
+  /* animation: firstLoadTransition 1.5s 0.5s forwards; */
 }
 
 .presentation--info {
   font-size: 2rem;
   color: var(--gray);
-  opacity: 0;
-  animation: firstLoadTransition 1.3s 2s forwards;
+  /* opacity: 0; */
+  /* animation: firstLoadTransition 1.5s 0.5s forwards; */
 }
 
 #btn--contact {
-  opacity: 0;
-  animation: firstLoadTransition 1.3s 2.5s forwards;
+  /* opacity: 0; */
+  /* animation: firstLoadTransition 1.5s 0.5s forwards; */
 }
 
 .btn--cta {
@@ -206,7 +207,8 @@ section {
 .section--title {
   color: white;
   font-size: 2.3rem;
-  animation: firstLoadTransitionDownToUp 1.3s;
+  /* opacity: 0; */
+  /* animation: firstLoadTransition 1.5s 0.5s forwards; */
 }
 
 .section--title > span {
@@ -505,10 +507,6 @@ footer {
   row-gap: 25px;
 }
 
-.social > a {
-  position: relative;
-}
-
 .social i {
   color: white;
   font-size: 1.7rem;
@@ -516,7 +514,15 @@ footer {
   transition: 0.3s ease;
 }
 
-.pulse {
+.social i:hover {
+  color: var(--pink);
+}
+
+/* .social > a {
+  position: relative;
+} */
+
+/* .pulse {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -525,17 +531,17 @@ footer {
   height: 30px;
   border-radius: 50%;
   z-index: -10;
-}
+} */
 
-.social > a:hover .pulse {
+/* .social > a:hover .pulse {
   transform-origin: bottom right;
   background-color: var(--pink);
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) 1 forwards;
-}
+} */
 
-.social > a:hover i {
+/* .social > a:hover i {
   transform: scale(1.3);
-}
+} */
 
 .contact--line {
   width: 1px;
