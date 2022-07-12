@@ -79,6 +79,15 @@
           <div class="about">
             <div class="about--info">
               <h2 class="section--title"><span>02.</span> About</h2>
+              <div class="about--top">
+                <div class="about--img-sm"></div>
+                <a
+                  href="src/utils/dev-web-ifr.pdf"
+                  download="CV_Tamaya_Lucas"
+                  class="btn--cta sm"
+                  >Télécharger mon CV</a
+                >
+              </div>
               <p class="about--info-para">
                 Je pratique l'informatique depuis le lycée, mais je me suis
                 découvert une réelle passion pour le développement web depuis
@@ -99,14 +108,14 @@
               <a
                 href="src/utils/dev-web-ifr.pdf"
                 download="CV_Tamaya_Lucas"
-                class="btn--cta"
+                class="btn--cta md"
                 >Télécharger mon CV</a
               >
             </div>
             <img
               src="./src/img/moi.jpg"
               alt="Photo de moi"
-              class="about--img"
+              class="about--img-md"
             />
           </div>
         </div>
@@ -140,9 +149,10 @@
                   </a>
                   <h2 class="project--title">GitHub</h2>
                   <p class="project--info">
-                    Reproduction de la partie frontend de l'application GitHub
+                    Partie frontend de l'ancienne version de l'application
+                    GitHub
                   </p>
-                  <p class="project--techno">HTML CSS React JS</p>
+                  <p class="project--techno">HTML SCSS React JS</p>
                 </div>
 
                 <div class="swiper-slide project">
@@ -166,10 +176,12 @@
                   </a>
                   <h2 class="project--title">Pinterest</h2>
                   <p class="project--info">
-                    Reproduction de l'application Pinterest avec la possibilité
-                    d'ajouter des photos, de les enregistrer ...
+                    Projet fullstack avec système de login, possibilité
+                    d'ajouter des photos, de les enregistrer
                   </p>
-                  <p class="project--techno">HTML CSS React JS MongoDB</p>
+                  <p class="project--techno">
+                    HTML SCSS React JS GraphQL MongoDB
+                  </p>
                 </div>
 
                 <div class="swiper-slide project">
@@ -193,9 +205,12 @@
                   </a>
                   <h2 class="project--title">Ticket Master</h2>
                   <p class="project--info">
-                    Reproduction de la partie frontend de l'application GitHub
+                    Application fullstack de réservation de tiquets d'évènements
+                    avec l'API TicketMaster
                   </p>
-                  <p class="project--techno">HTML CSS React JS</p>
+                  <p class="project--techno">
+                    HTML Tailwind CSS Next JS MongoDB
+                  </p>
                 </div>
 
                 <div class="swiper-slide project">
@@ -219,35 +234,10 @@
                   </a>
                   <h2 class="project--title">Discord</h2>
                   <p class="project--info">
-                    Reproduction de la partie frontend de l'application Discord
+                    Partie frontend de l'ancienne version web de l'application
+                    Discord
                   </p>
                   <p class="project--techno">HTML CSS React JS</p>
-                </div>
-
-                <div class="swiper-slide project">
-                  <div class="project--header">
-                    <a
-                      href="https://github.com/LucasTamaya/tesla-clone"
-                      target="_blank"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                  <a
-                    href="https://tesla-clone-lucastamaya.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/img/projets/tesla.png"
-                      alt="Projet Tesla"
-                      class="project--img"
-                    />
-                  </a>
-                  <h2 class="project--title">Tesla</h2>
-                  <p class="project--info">
-                    Reproduction de la partie frontend du site web Tesla
-                  </p>
-                  <p class="project--techno">HTML SCSS React JS</p>
                 </div>
 
                 <div class="swiper-slide project">
@@ -271,7 +261,118 @@
                   </a>
                   <h2 class="project--title">Trello</h2>
                   <p class="project--info">
-                    Reproduction de l'application Trello
+                    Projet fullstack: reproduction du gestionnaire de projet
+                    Trello
+                  </p>
+                  <p class="project--techno">
+                    HTML Tailwind CSS Next JS MongoDB
+                  </p>
+                </div>
+
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/tesla-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://tesla-clone-lucastamaya.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/img/projets/tesla.png"
+                      alt="Projet Tesla"
+                      class="project--img"
+                    />
+                  </a>
+                  <h2 class="project--title">Tesla</h2>
+                  <p class="project--info">
+                    Partie frontend du site web de Tesla
+                  </p>
+                  <p class="project--techno">HTML SCSS React JS</p>
+                </div>
+
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/tic-tac-toe-multiplayer-game"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://tic-tac-toe-multiplayer-game-lucastamaya.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/img/projets/tic-tac-toe.png"
+                      alt="Projet Tic Tac Toe"
+                      class="project--img"
+                    />
+                  </a>
+                  <h2 class="project--title">Morpion</h2>
+                  <p class="project--info">
+                    Jeu du morpion réalisé avec les websockets
+                  </p>
+                  <p class="project--techno">HTML SCSS React JS Socket.io</p>
+                </div>
+
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/real-time-chat-app"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://real-time-chat-app-lucastamaya.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/img/projets/chat-app.png"
+                      alt="Projet Chat App"
+                      class="project--img"
+                    />
+                  </a>
+                  <h2 class="project--title">Chat-App</h2>
+                  <p class="project--info">
+                    Application fullstack de chat en ligne avec un système de
+                    login et la possibilité d'envoyer des messages en temps réel
+                  </p>
+                  <p class="project--techno">
+                    HTML CSS React JS MongoDB Socket.io
+                  </p>
+                </div>
+
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/hulu-clone"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://hulu-clone-lucastamaya.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/img/projets/hulu.png"
+                      alt="Projet Hulu"
+                      class="project--img"
+                    />
+                  </a>
+                  <h2 class="project--title">Hulu</h2>
+                  <p class="project--info">
+                    Clone fullstack de l'application Hulu via l'API MDB afin
+                    d'accéder aux catalogues de films.
                   </p>
                   <p class="project--techno">
                     HTML Tailwind CSS Next JS MongoDB
