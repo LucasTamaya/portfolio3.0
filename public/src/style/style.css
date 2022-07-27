@@ -35,6 +35,10 @@ html {
   background-color: var(--dark-blue);
 }
 
+html.scrollDisable {
+  overflow: hidden;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -47,11 +51,24 @@ header {
   align-items: center;
 }
 
+.logoContainer {
+  position: relative;
+}
+
+.logoContainer::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0;
+  top: 70px;
+  background-color: var(--pink);
+  transition: 0.2s ease;
+}
+
 .logo {
   width: 80px;
-  border: 2px solid var(--pink);
-  border-bottom: none;
-  border-right: none;
+  position: relative;
 }
 
 .nav {
@@ -128,6 +145,7 @@ header {
     align-items: center;
     transition: 0.3s ease;
     background-color: var(--light-blue);
+    z-index: 100;
   }
 
   nav.enable {
@@ -203,9 +221,6 @@ section {
   width: 100%;
   height: 100vh;
   padding: 0 30px;
-}
-
-@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 640px) {
@@ -370,6 +385,7 @@ section {
   flex-direction: column;
   justify-content: center;
   row-gap: 20px;
+  z-index: -1;
 }
 
 .swiper {
@@ -480,6 +496,7 @@ form {
 
 .form--input.message {
   resize: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .form--btn {
@@ -514,6 +531,17 @@ form {
   }
 }
 
+/* Page des projets mobiles */
+.mobileAppContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  margin-top: 50px;
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -528,6 +556,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo--footer {
+  width: 80px;
 }
 
 .footer--legal {
@@ -571,6 +603,9 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+  .logo--footer {
+    width: 50px;
+  }
 }
 
 /* Mentions Légales */

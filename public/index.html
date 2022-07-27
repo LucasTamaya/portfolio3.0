@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0,user-scalable=0"
+    />
     <link rel="icon" type="image/x-icon" href="/public/src/img/favicon.ico" />
     <!-- Font Google link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +35,9 @@
 
   <body>
     <header>
-      <img src="src/img/logo.png" alt="Mon logo" class="logo" />
+      <div class="logoContainer">
+        <img src="src/img/logo.png" alt="Mon logo" class="logo" />
+      </div>
 
       <nav>
         <ul class="nav">
@@ -231,6 +237,35 @@
                 <div class="swiper-slide project">
                   <div class="project--header">
                     <a
+                      href="https://github.com/LucasTamaya/instagram-clone-fullstack"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://instagram-clone-fullstack-lucastamaya.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/img/projets/instagram.png"
+                      alt="Projet Instagram"
+                      class="project--img"
+                    />
+                  </a>
+                  <h2 class="project--title">Instagram</h2>
+                  <p class="project--info">
+                    Projet fullstack: reproduction de l'application Instagram
+                    avec ses fonctionnalités majeures
+                  </p>
+                  <p class="project--techno">
+                    HTML Tailwind CSS React JS GraphQL MongoDB
+                  </p>
+                </div>
+
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
                       href="https://github.com/LucasTamaya/DiscordClone"
                       target="_blank"
                     >
@@ -281,6 +316,32 @@
                   </p>
                   <p class="project--techno">
                     HTML Tailwind CSS Next JS MongoDB
+                  </p>
+                </div>
+
+                <div class="swiper-slide project">
+                  <div class="project--header">
+                    <a
+                      href="https://github.com/LucasTamaya/hulu-react-native"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <a href="./mobile-app.html" target="_blank">
+                    <img
+                      src="./src/img/projets/hulu-react-native.png"
+                      alt="Projet Hulu React Native"
+                      class="project--img"
+                    />
+                  </a>
+                  <h2 class="project--title">Hulu version mobile</h2>
+                  <p class="project--info">
+                    Réplique de l'application Hulu en version mobile via l'API
+                    TMDB afin d'accéder aux catalogues de films.
+                  </p>
+                  <p class="project--techno">
+                    React Native Tailwind CSS Firebase
                   </p>
                 </div>
 
@@ -386,7 +447,7 @@
                   </a>
                   <h2 class="project--title">Hulu</h2>
                   <p class="project--info">
-                    Clone fullstack de l'application Hulu via l'API MDB afin
+                    Clone fullstack de l'application Hulu via l'API TMDB afin
                     d'accéder aux catalogues de films.
                   </p>
                   <p class="project--techno">
@@ -458,7 +519,7 @@
       <!-- Footer -->
       <footer>
         <div class="footer--container">
-          <img src="src/img/logo.png" alt="Mon logo" class="logo" />
+          <img src="src/img/logo.png" alt="Mon logo" class="logo--footer" />
           <a href="mentions-légales.html" class="footer--legal"
             >Mentions Légales</a
           >
@@ -520,5 +581,8 @@
 
     <!-- Index JS -->
     <script src="src/js/index.js"></script>
+
+    <!-- Logo loading on scroll -->
+    <script src="src/js/logoLoading.js"></script>
   </body>
 </html>
