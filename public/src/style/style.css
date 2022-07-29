@@ -45,10 +45,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 .logoContainer {
@@ -172,7 +173,7 @@ header {
   #hamburgerMenu {
     display: block;
     color: white;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .nav--item {
@@ -268,9 +269,6 @@ section {
   color: var(--gray);
 }
 
-#btn--contact {
-}
-
 .btn--cta {
   width: fit-content;
   background-color: var(--pink);
@@ -333,12 +331,6 @@ section {
 
 .about--img-sm {
   display: none;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  background-image: url("../img/moi.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .about--info {
@@ -363,12 +355,18 @@ section {
 }
 
 @media screen and (max-width: 640px) {
-  .about {
-    column-gap: 25px;
+  .about--top {
+    margin: 10px 0;
   }
 
   .about--img-sm {
     display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url("../img/moi.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   .about--img-md {
@@ -376,6 +374,7 @@ section {
   }
 
   .about--info-para {
+    font-size: 1.2rem;
     text-align: center;
   }
 }
@@ -526,6 +525,10 @@ form {
 }
 
 @media screen and (max-width: 640px) {
+  .form--input {
+    padding: 10px;
+  }
+
   .form--input.message {
     height: 150px;
   }
