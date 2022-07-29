@@ -30,9 +30,14 @@
   }
 }
 
+body {
+  height: -webkit-fill-available;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   background-color: var(--dark-blue);
+  height: -webkit-fill-available;
 }
 
 html.scrollDisable {
