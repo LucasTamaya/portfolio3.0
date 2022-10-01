@@ -461,12 +461,6 @@ section {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 640px) {
-}
-
 /* Contact */
 .contact {
   display: flex;
